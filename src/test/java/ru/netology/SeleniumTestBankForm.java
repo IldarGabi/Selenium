@@ -18,7 +18,8 @@ public class SeleniumTestBankForm {
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\QA igabi\\Projects\\Autotesting\\Selenium\\driver\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\QA igabi\\Projects\\Autotesting\\Selenium\\driver\\chromedriver.exe");
     }
 
     @BeforeEach
